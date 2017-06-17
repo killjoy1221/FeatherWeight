@@ -1,0 +1,19 @@
+plugins {
+    id 'org.spongepowered.plugin' version '0.8.1'
+}
+
+group = pluginGroup
+version = pluginVersion
+repositories {
+    jcenter()
+}
+dependencies {
+//    compile 'org.spongepowered:spongeapi:6.0.0-SNAPSHOT'
+    compile('org.spongepowered:spongevanilla:1.12-7.0.0-BETA-285') {
+//        transitive = false
+        exclude group: 'org.jline'
+        exclude group:'net.minecrell'
+    }
+}
+
+sponge.plugin.id = pluginId
