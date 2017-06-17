@@ -143,7 +143,7 @@ public class Featherweight {
         // The text message could be configurable, check the docs on how to do so!
         activateSpeed(player);
 
-        if (config.fly.autofly && player.hasPermission(FLY_AUTO)) {
+        if (config.fly.enabled && config.fly.autofly && player.hasPermission(FLY_AUTO)) {
             getFlight(player).setFlight(true);
         }
 

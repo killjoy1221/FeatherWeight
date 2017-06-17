@@ -27,9 +27,9 @@ public class Config {
     @ConfigSerializable
     public static class Fly {
 
-        @Setting
+        @Setting(comment = "Enables the toggling of flight. If disabled, flight will only be available in the proper gamemodes.")
         public boolean enabled = true;
-        @Setting
+        @Setting(comment = "Enables auto-enabling of flight on join")
         public boolean autofly = false;
     }
 }
